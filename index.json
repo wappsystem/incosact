@@ -12,6 +12,15 @@
         "permission-query-form":                {"table_id":"20011575","url":"modules/permissions/query-form.html"},
 
 
-        "questionnaire-data":           {"table_id":"20009290","url":"modules/tasks/questionnaire-data.html"}
+        "questionnaire-data":                   {"table_id":"20009290","url":"modules/tasks/questionnaire-data.html"},
+        "questionnaire-english-form":           {"table_id":"20009290","url":"modules/tasks/questionnaire-english-form.html"},
+        "questionnaire-spanish-form":           {"table_id":"20009290","url":"modules/tasks/questionnaire-spanish-form.html"},
+        "questionnaire-portuguese-form":        {"table_id":"20009290","url":"modules/tasks/questionnaire-portuguese-form.html"},
+        "questionnaire-turkish-form":           {"table_id":"20009290","url":"modules/tasks/questionnaire-turkish-form.html"},
+
+        "thanks-english-form":           {"table_id":"20009290","url":"modules/tasks/thanks-english-form.html"},
+        "thanks-spanish-form":           {"table_id":"20009290","url":"modules/tasks/thanks-spanish-form.html"},
+        "thanks-portuguese-form":        {"table_id":"20009290","url":"modules/tasks/thanks-portuguese-form.html"},
+        "thanks-turkish-form":           {"table_id":"20009290","url":"modules/tasks/thanks-turkish-form.html"}
 	}
 }
