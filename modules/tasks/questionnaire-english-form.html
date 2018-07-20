@@ -740,7 +740,7 @@
                 if($('select[name=after_sleep_referral__ID]').val()===''){ $vm.alert("Please question 9 'After Ablation treatment'");	return false;}
                 if($('select[name=prior_sleep_referral__ID]').val()!=='' && $('select[name=after_sleep_referral__ID]').val()!=='' ){
                     if(parseInt($('select[name=prior_sleep_referral__ID]').val()) + parseInt($('select[name=after_sleep_referral__ID]').val())>100 ) {
-                        $vm.alert("Question 9 .Both answers must total 100% or less'");	return false;
+                        $vm.alert("Question 9 .Both answers must total 100% or less");	return false;
                     }
                 }
             }

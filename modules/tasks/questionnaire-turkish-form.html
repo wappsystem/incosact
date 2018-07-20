@@ -34,7 +34,7 @@
               <br><br><b>CPAP:  </b>Sürekli Pozitif Havayolu Basıncı, tıkayıcı uyku apnesini tedavi etmek için kullanılan bir aygıttır. Bu tedavi, bir burun maskesi ile üst solunum yoluna basınçlı hava verilerek yapılır.
               <br><br>
           </div>
-        <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Next" id=intro_next__ID></div>
+        <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="İleri" id=intro_next__ID></div>
         </div>
         <div id=section1__ID>
         <div class="w3-container w3-content-2 w3-row w3-padding-12" style="background-color:#A7B3A5 ">
@@ -199,7 +199,7 @@
           </table>
         </div>
         <br>
-        <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Back" id=section1_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="Next" id=section1_next__ID></div>
+        <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Geri" id=section1_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="İleri" id=section1_next__ID></div>
         <br><br><br>
         </div>
           <div id=section2__ID>
@@ -309,7 +309,7 @@
                     </div>
             </div>
             <br>
-            <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Back" id=section2_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="Next" id=section2_next__ID></div>
+            <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Geri" id=section2_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="İleri" id=section2_next__ID></div>
           </div>
           <div id=section3__ID>
             <div class="w3-container w3-content-2 w3-row w3-padding-12" style="background-color:#A7B3A5 ">
@@ -434,7 +434,7 @@
                 </table>
           </div>
           <br>
-          <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Back" id=section3_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="Next" id=section3_next__ID></div>
+          <div class="w3-container w3-content-2 w3-medium "><input class="w3-btn w3-teal" type="button" value="Geri" id=section3_back__ID>&nbsp;&nbsp;&nbsp;<input class="w3-btn w3-teal" type="button" value="İleri" id=section3_next__ID></div>
 </div>
 <div id=section4__ID >
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#A7B3A5 ">
@@ -636,17 +636,17 @@
                 </div>
             </div>
             <div class="w3-container w3-content-2 w3-row w3-padding-12 " style="background-color:#B4D8C0 ">
-                <br>If you wish to be contacted about participating in future multi-centre research in sleep apnea and cardiovascular disease, please email us at the following address:
+                <br>Gelecekte uyku apnesi ve kardiyovasküler hastalıklar için çoklu araştırma merkezinde araştırmaya katılmak üzere sizinle temasa geçilmesini dilerseniz, lütfen aşağıdaki adresten bize e-posta yollayın:
                 <div  class=" w3-container w3-padding-8">
                     INCOSACT.survey@gmail.com<br><br>
-                    <b>Please remember to CLICK on the Submit button below.</b>
+                    <b>Lütfen aşağıdaki Gönder düğmesini TIKLAMAYI unutmayınız.</b>
                 </div>
             </div>
 
             <div class="w3-container w3-content-2">
                 <div >
                   <br>
-                <input class="w3-btn w3-teal " type="button" value="Back" id=section4_back__ID>&nbsp;&nbsp;&nbsp;&nbsp; <input class="w3-btn w3-teal" type="button" id=submit__ID value="Submit" />
+                <input class="w3-btn w3-teal " type="button" value="Geri" id=section4_back__ID>&nbsp;&nbsp;&nbsp;&nbsp; <input class="w3-btn w3-teal" type="button" id=submit__ID value="Gönder" />
                   <br><br><br><br>
                 </div>
             </div>
@@ -677,23 +677,23 @@
           $('#section4__ID').hide();
         });
         $('#section1_next__ID').on('click', function(){
-            if($('input:radio[name=cardiology_discipline__ID]:checked').val()===undefined){ $vm.alert("Please answer question 1");	return false;}
-            if($('select[name=AFiB_fail_drug__ID]').val()===''){ $vm.alert("Please answer question 2 - 'Fail Anti-Arrhythmic Drug Therapy'");	return false;}
-            if($('select[name=AFiB_fail_cardioversion__ID]').val()===''){ $vm.alert("Please answer question 2 - 'Fail Cardioversion'");	return false;}
-            if($('select[name=AFiB_fail_first_ablation__ID]').val()===''){ $vm.alert("Please answer question 2 - 'Fail First Ablation'");	return false;}
-            if($('select[name=AFiB_fail_second_ablation__ID]').val()===''){ $vm.alert("Please answer question 2 - 'Fail > Ablations'");	return false;}
-            if($('input:radio[name=risk_factor_age__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Aged > 60 years'");	return false;}
-            if($('input:radio[name=risk_factor_diabetes__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Diabetes'");	return false;}
-            if($('input:radio[name=risk_factor_hypertension__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Hypertension'");	return false;}
-            if($('input:radio[name=risk_factor_obesity__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Obesity'");	return false;}
-            if($('input:radio[name=risk_factor_alcohol__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Excess Alcohol'");	return false;}
-            if($('input:radio[name=risk_factor_osa__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Obstructive Sleep Apnea'");	return false;}
-            if($('input:radio[name=risk_factor_thyroid__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Thyroid Disease'");	return false;}
-            if($('input:radio[name=risk_factor_cld__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Chronic Lung Disease'");	return false;}
-            if($('input:radio[name=risk_factor_cad__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Coronary Artery Disease'");	return false;}
-            if($('input:radio[name=risk_factor_valvular__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Valvular Disease'");	return false;}
-            if($('input:radio[name=risk_factor_chf__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Congestive Heart Failure'");	return false;}
-            if($('input:radio[name=risk_factor_diastolic_dysfunction__ID]:checked').val()===undefined){ $vm.alert("Please answer question 3 'Diastolic Dysfunction'");	return false;}
+            if($('input:radio[name=cardiology_discipline__ID]:checked').val()===undefined){ $vm.alert("Lütfen 1. soruyu cevaplayın");	return false;}
+            if($('select[name=AFiB_fail_drug__ID]').val()===''){ $vm.alert("Lütfen 2.soruyu cevaplayın - 'Anti-aritmik ilaç tedavisi başarısız'");	return false;}
+            if($('select[name=AFiB_fail_cardioversion__ID]').val()===''){ $vm.alert("Lütfen 2. soruyu cevaplayın - 'Kardiyoversiyon başarısız'");	return false;}
+            if($('select[name=AFiB_fail_first_ablation__ID]').val()===''){ $vm.alert("Lütfen 2. soruyu cevaplayın - 'İlk ablasyon başarısız'");	return false;}
+            if($('select[name=AFiB_fail_second_ablation__ID]').val()===''){ $vm.alert("Lütfen 2. soruyu cevaplayın - 'Başarısız >2 Ablasyon'");	return false;}
+            if($('input:radio[name=risk_factor_age__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  '60 yaşından büyük'");	return false;}
+            if($('input:radio[name=risk_factor_diabetes__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Diyabet'");	return false;}
+            if($('input:radio[name=risk_factor_hypertension__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Hipertansiyon'");	return false;}
+            if($('input:radio[name=risk_factor_obesity__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Obezite'");	return false;}
+            if($('input:radio[name=risk_factor_alcohol__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Aşırı alkol'");	return false;}
+            if($('input:radio[name=risk_factor_osa__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Tıkayıcı Uyku Apnesi'");	return false;}
+            if($('input:radio[name=risk_factor_thyroid__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Tiroid Hastalığı'");	return false;}
+            if($('input:radio[name=risk_factor_cld__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Kronik Akciğer Hastalığı'");	return false;}
+            if($('input:radio[name=risk_factor_cad__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Koroner Atardamar Hastalığı'");	return false;}
+            if($('input:radio[name=risk_factor_valvular__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Kapakçık Hastalığı'");	return false;}
+            if($('input:radio[name=risk_factor_chf__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Konjestif Kalp Yetmezliği'");	return false;}
+            if($('input:radio[name=risk_factor_diastolic_dysfunction__ID]:checked').val()===undefined){ $vm.alert("Lütfen 3. soruyu cevaplayın  'Diyastolik Bozukluk'");	return false;}
             if($('select[name=sleep_referral__ID]').val()==='0' || $('select[name=sleep_referral__ID]').val()===''){
                 $('#q6').hide();
                 $('#q7').hide();
@@ -721,25 +721,25 @@
           $('#section4__ID').hide();
         });
         $('#section2_next__ID').on('click', function(){
-            if($('input:radio[name=sleep_lab_access__ID]:checked').val()===undefined){ $vm.alert("Please answer question 4");	return false;}
-            if($('select[name=sleep_referral__ID]').val()===''){ $vm.alert("Please answer question 5");	return false;}
+            if($('input:radio[name=sleep_lab_access__ID]:checked').val()===undefined){ $vm.alert("Lütfen 4. soruyu cevaplayın ");	return false;}
+            if($('select[name=sleep_referral__ID]').val()===''){ $vm.alert("Lütfen 5. soruyu cevaplayın ");	return false;}
             if($('select[name=sleep_referral__ID]').val()!=='0'){
-                if($('select[name=full_sleep_study__ID]').val()===''){ $vm.alert("Please answer question 6 'A full sleep study'");	return false;}
-                if($('select[name=limited_sleep_study__ID]').val()===''){ $vm.alert("Please answer question 6 'A limitied sleep study'");	return false;}
+                if($('select[name=full_sleep_study__ID]').val()===''){ $vm.alert("Lütfen 6. soruyu cevaplayın 'Bir tam uyku çalışması'");	return false;}
+                if($('select[name=limited_sleep_study__ID]').val()===''){ $vm.alert("Lütfen 6. soruyu cevaplayın  'Bir sınırlı uyku çalışması'");	return false;}
                 if($('select[name=full_sleep_study__ID]').val()!=='' && $('select[name=limited_sleep_study__ID]').val()!=='' ){
                     if(parseInt($('select[name=full_sleep_study__ID]').val()) + parseInt($('select[name=limited_sleep_study__ID]').val())!=100 ) {
-                        $vm.alert("Question 6 .Both answers must total 100%'");	return false;
+                        $vm.alert(’Soru 6: Her iki cevap toplamda %100 olmalı');	return false;
                     }
                 }
-                if($('select[name=dx_osa_proportion__ID]').val()===''){ $vm.alert("Please question 7 'What proportion are diagnosed with OSA?'");	return false;}
-                if($('select[name=rec_tx_osa_proportion__ID]').val()===''){ $vm.alert("Please question 7 'What proportion of patients diagnosed with OSA are recommended for treatment with CPAP'");	return false;}
-                if($('select[name=tx_osa_proportion__ID]').val()===''){ $vm.alert("Please question 7 What proportion of patients recommended for treatment with CPAP end up using it?'");	return false;}
-                if($('input:radio[name=accept_cpap_inluence_referral__ID]:checked').val()===undefined){ $vm.alert("Please answer question 8");	return false;}
-                if($('select[name=prior_sleep_referral__ID]').val()===''){ $vm.alert("Please question 9 'Prior to any AFib treatment'");	return false;}
-                if($('select[name=after_sleep_referral__ID]').val()===''){ $vm.alert("Please question 9 'After Ablation treatment'");	return false;}
+                if($('select[name=dx_osa_proportion__ID]').val()===''){ $vm.alert("Lütfen 7. soruyu cevaplayın 'Yüzde kaça OSA teşhisi konmaktadır?'");	return false;}
+                if($('select[name=rec_tx_osa_proportion__ID]').val()===''){ $vm.alert("Lütfen 7. soruyu cevaplayın 'OSA teşhisi konmuş hastaların yüzde kaçına CPAP tedavisi tavsiye edilmektedir?'");	return false;}
+                if($('select[name=tx_osa_proportion__ID]').val()===''){ $vm.alert("Lütfen 7. soruyu cevaplayın ‘CPAP tedavisi tavisye edilen hastaların yüzde kaçı bunu kullanmıştır?'");	return false;}
+                if($('input:radio[name=accept_cpap_inluence_referral__ID]:checked').val()===undefined){ $vm.alert("Lütfen 8. soruyu cevaplayın");	return false;}
+                if($('select[name=prior_sleep_referral__ID]').val()===''){ $vm.alert("Lütfen 9. soruyu cevaplayın 'Herhangi bir Atrial Fibrilasyon tedavisinden önce'");	return false;}
+                if($('select[name=after_sleep_referral__ID]').val()===''){ $vm.alert("Lütfen 9. soruyu cevaplayın 'Ablasyon tedavisinden sonra'");	return false;}
                 if($('select[name=prior_sleep_referral__ID]').val()!=='' && $('select[name=after_sleep_referral__ID]').val()!=='' ){
                     if(parseInt($('select[name=prior_sleep_referral__ID]').val()) + parseInt($('select[name=after_sleep_referral__ID]').val())>100 ) {
-                        $vm.alert("Question 9 .Both answers must total 100% or less'");	return false;
+                        $vm.alert("Soru 9.Her iki cevap da toplamda %100 veya daha az olmalı");	return false;
                     }
                 }
             }
@@ -757,17 +757,17 @@
           $('#section4__ID').hide();
         });
         $('#section3_next__ID').on('click', function(){
-            if($('input:radio[name=research_preventing_afib__ID]:checked').val()===undefined){ $vm.alert("Please answer question 10 'Preventing AFib'");	return false;}
-            if($('input:radio[name=research_managing_first_afib__ID]:checked').val()===undefined){ $vm.alert("Please answer question 10 'Managing First AFib Episode'");	return false;}
-            if($('input:radio[name=research_managing_paroxysmal_afib__ID]:checked').val()===undefined){ $vm.alert("Please answer question 10 'Managing Paroxysmal AFib'");	return false;}
-            if($('input:radio[name=research_managing_persistent_afib__ID]:checked').val()===undefined){ $vm.alert("Please answer question 10 'Managing Persistent AFib'");	return false;}
-            if($('input:radio[name=research_managing_permanent_afib__ID]:checked').val()===undefined){ $vm.alert("Please answer question 10 'Managing Permanent AFib'");	return false;}
-            if($('input:radio[name=outcome_reduce_risk_stroke__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Reduced Risk of Stroke'");	return false;}
-            if($('input:radio[name=outcome_reduce_risk_afib_recurrence__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Reduced Risk of AFib Recurrence'");	return false;}
-            if($('input:radio[name=outcome_reduce_risk_afib_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Reduced Risk of AFib hospitalisation'");	return false;}
-            if($('input:radio[name=outcome_reduce_afib_burden__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Reduced AFib Symptom Burden'");	return false;}
-            if($('input:radio[name=outcome_improve_qol__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Improved Quality of Life'");	return false;}
-            if($('input:radio[name=outcome_improve_sleep__ID]:checked').val()===undefined){ $vm.alert("Please answer question 11 'Improved Sleep Quality'");	return false;}
+            if($('input:radio[name=research_preventing_afib__ID]:checked').val()===undefined){ $vm.alert("Lütfen 10. soruyu cevaplayın ' Atrial Fibrilasyonu önleme'");	return false;}
+            if($('input:radio[name=research_managing_first_afib__ID]:checked').val()===undefined){ $vm.alert("Lütfen 10. soruyu cevaplayın 'İlk Atrial Fibrilasyon Episodunun Takibi'");	return false;}
+            if($('input:radio[name=research_managing_paroxysmal_afib__ID]:checked').val()===undefined){ $vm.alert("Lütfen 10. soruyu cevaplayın 'Paroksismal Atrial Fibrilasyon Takibi'");	return false;}
+            if($('input:radio[name=research_managing_persistent_afib__ID]:checked').val()===undefined){ $vm.alert("Lütfen 10. soruyu cevaplayın 'İnatçı Atrial Fibrilasyon Takibi'");	return false;}
+            if($('input:radio[name=research_managing_permanent_afib__ID]:checked').val()===undefined){ $vm.alert("Lütfen 10. soruyu cevaplayın 'Kronik Atrial Fibrilasyon Takibi'");	return false;}
+            if($('input:radio[name=outcome_reduce_risk_stroke__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın 'İnme Riskinde azalma'");	return false;}
+            if($('input:radio[name=outcome_reduce_risk_afib_recurrence__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın 'Atrial Fibrilasyon tekrarlama riskinde azalma'");	return false;}
+            if($('input:radio[name=outcome_reduce_risk_afib_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın ' Atrial Fibrilasyona bağlı  hastaneye yatırılma riskinde azalma'");	return false;}
+            if($('input:radio[name=outcome_reduce_afib_burden__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın ' Atrial Fibrilasyon semptom yükünde azalma'");	return false;}
+            if($('input:radio[name=outcome_improve_qol__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın 'Yaşam Kalitesinde artma'");	return false;}
+            if($('input:radio[name=outcome_improve_sleep__ID]:checked').val()===undefined){ $vm.alert("Lütfen 11. soruyu cevaplayın 'Yaşam Kalitesinde artma'");	return false;}
           $('#intro__ID').hide();
           $('#section1__ID').hide();
           $('#section2__ID').hide();
@@ -819,20 +819,20 @@
         }
         //----------------------------------
         m.before_submit=function(){
-            if($('input:radio[name=afib_tx_stroke__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Stroke'");	return false;}
-            if($('input:radio[name=rct_stroke__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Stroke - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_cardioversion__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Recurrent AFib after Cardioversion'");	return false;}
-            if($('input:radio[name=rct_cardioversion__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Recurrent AFib after Cardioversion - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_ablation__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Recurrent AFib after Ablation'");	return false;}
-            if($('input:radio[name=rct_ablation__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Recurrent AFib after Ablation - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_hf__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Heart Failure'");	return false;}
-            if($('input:radio[name=rct_hf__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Heart Failure - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'AFib Hospitalisation'");	return false;}
-            if($('input:radio[name=rct_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'AFib Hospitalisation - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_sx__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Symptoms of AFib'");	return false;}
-            if($('input:radio[name=rct_sx__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Symptoms of AFib - Participantion Yes/No'");	return false;}
-            if($('input:radio[name=afib_tx_qol__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Poor Quality of Life'");	return false;}
-            if($('input:radio[name=rct_qol__ID]:checked').val()===undefined){ $vm.alert("Please answer question 12 'Poor Quality of Life - Participantion Yes/No'");	return false;}
+            if($('input:radio[name=afib_tx_stroke__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'İnme'");	return false;}
+            if($('input:radio[name=rct_stroke__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'İnme – Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_cardioversion__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın  'Kardiyoversiyondan sonra Tekrarlayan Atrial Fibrilasyon'");	return false;}
+            if($('input:radio[name=rct_cardioversion__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın ' Kardiyoversiyondan sonra Tekrarlayan Atrial Fibrilasyon – Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_ablation__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Ablasyondan sonra Tekrarlayan Atrial Fibrilasyon'");	return false;}
+            if($('input:radio[name=rct_ablation__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın ' Ablasyondan sonra Tekrarlayan Atrial Fibrilasyon – Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_hf__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Kalp Yetmezliği'");	return false;}
+            if($('input:radio[name=rct_hf__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Kalp Yetmezliği – Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Atrial Fibrilasyona bağlı hastaneye yatış'");	return false;}
+            if($('input:radio[name=rct_hospitalisation__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Atrial Fibrilasyona bağlı hastaneye yatış – Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_sx__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Atrial Fibrilasyon Semptomları'");	return false;}
+            if($('input:radio[name=rct_sx__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Atrial Fibrilasyon Semptomları– Katılım Evet/Hayır'");	return false;}
+            if($('input:radio[name=afib_tx_qol__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Düşük Yaşam Kalitesi'");	return false;}
+            if($('input:radio[name=rct_qol__ID]:checked').val()===undefined){ $vm.alert("Lütfen 12. soruyu cevaplayın 'Düşük Yaşam Kalitesi – Katılım Evet/Hayır'");	return false;}
             return true;
         }
         //-------------------------------------
