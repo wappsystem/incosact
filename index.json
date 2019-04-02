@@ -19,6 +19,7 @@
         "questionnaire-turkish-form":           {"table_id":"20009290","url":"modules/tasks/questionnaire-turkish-form.html"},
         "questionnaire-japanese-form":          {"table_id":"20009290","url":"modules/tasks/questionnaire-japanese-form.html"},
         "questionnaire-canadian-french-form":   {"table_id":"20009290","url":"modules/tasks/questionnaire-canadian-french-form.html"},
+        "questionnaire-french-form":            {"table_id":"20009290","url":"modules/tasks/questionnaire-french-form.html"},
 
         "thanks-english-form":           {"table_id":"","url":"modules/tasks/thanks-english-form.html"},
         "thanks-spanish-form":           {"table_id":"","url":"modules/tasks/thanks-spanish-form.html"},
@@ -26,6 +27,7 @@
         "thanks-turkish-form":           {"table_id":"","url":"modules/tasks/thanks-turkish-form.html"},
         "thanks-japanese-form":          {"table_id":"","url":"modules/tasks/thanks-japanese-form.html"},
         "thanks-canadian-french-form":   {"table_id":"","url":"modules/tasks/thanks-canadian-french-form.html"},
+        "thanks-french-form":            {"table_id":"","url":"modules/tasks/thanks-french-form.html"},
         "questionnaire-test-new-layou-form":{"table_id":"20009290","url":"modules/tasks/questionnaire-english-bootstrap-form.html"}
 	}
 }
