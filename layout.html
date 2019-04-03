@@ -16,8 +16,8 @@
                 <div class="vm_dropdown" id=signin__ID>
                     <button class="vm_dropbtn"><i class="fa fa-user"></i> Sign In <i class="fa fa-caret-down"></i></button>
                     <div class="vm_dropdown-content">
-                        <a id=google__ID >With your Google account</a>
-                        <a id=facebook__ID >With your Facebook account</a>
+                        <!--<a id=google__ID >With your Google account</a>
+                        <a id=facebook__ID >With your Facebook account</a>-->
                         <a onclick="$vm.nav_wappsystem_signin();">With your Wappsystem account</a>
                     </div>
                 </div>
@@ -133,8 +133,8 @@
         show_user();
         //---------------------------------------------
         if(window.location.hostname!='127.0.0.1'){
-            $vm.google_signin_setup('175539446682-tvqlkse9j0mt79fk70uetoq30bpnrboa.apps.googleusercontent.com','google__ID',show_user);
-            $vm.facebook_signin_setup('360182794393427','facebook__ID',show_user);
+            //$vm.google_signin_setup('175539446682-tvqlkse9j0mt79fk70uetoq30bpnrboa.apps.googleusercontent.com','google__ID',show_user);
+            //$vm.facebook_signin_setup('360182794393427','facebook__ID',show_user);
         }
         //---------------------------------------------
     }
